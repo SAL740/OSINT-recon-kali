@@ -1,4 +1,7 @@
 # Nmap scan report for kali.org
+
+nmap -sV -T4 -Pn -iL domains.txt -oN data/nmap/nmap_results.txt
+
 Host is up (0.18s latency).
 PORT     STATE SERVICE VERSION
 80/tcp   open  http    Apache httpd 2.4.41
