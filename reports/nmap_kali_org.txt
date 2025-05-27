@@ -1,0 +1,5 @@
+# Nmap scan report for kali.org
+Host is up (0.18s latency).
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.41
+443/tcp  open  https   Apache httpd 2.4.41 (SSL)
