@@ -1,0 +1,144 @@
+ theHarvester -d kali.org -b bing,duckduckgo,crtsh,hunter -l 100
+
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.7.1                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: kali.org 
+
+
+[!] Missing API key for Hunter. 
+        Searching 0 results.
+[*] Searching Bing. 
+[*] Searching CRTsh.                                                                                                      
+[*] Searching Duckduckgo.                                                                                                 
+                                                                                                                          
+[*] No IPs found.                                                                                                         
+                                                                                                                          
+[*] No emails found.                                                                                                      
+                                                                                                                          
+[*] No people found.                                                                                                      
+                                                                                                                          
+[*] Hosts found: 57                                                                                                       
+---------------------                                                                                                     
+2Fdocs.kali.org                                                                                                           
+2Ftools.kali.org                                                                                                          
+aeacus.kali.org                                                                                                           
+aphrodite.kali.org                                                                                                        
+archive-4.kali.org                                                                                                        
+archive.kali.org                                                                                                          
+arm.kali.org                                                                                                              
+artemis.kali.org                                                                                                          
+atlas.kali.org                                                                                                            
+atropos.kali.org                                                                                                          
+autopkgtest.kali.org                                                                                                      
+bittorrent.kali.org                                                                                                       
+bugs.kali.org                                                                                                             
+buildd-amd64.kali.org                                                                                                     
+buildd-arm64.kali.org                                                                                                     
+buildd-armel.kali.org                                                                                                     
+buildd-armhf.kali.org                                                                                                     
+cdimage.kali.org                                                                                                          
+coeus.kali.org                                                                                                            
+crius.kali.org                                                                                                            
+dionysus.kali.org                                                                                                         
+discord.kali.org                                                                                                          
+docs.kali.org                                                                                                             
+dzaa.kali.org                                                                                                             
+epimetheus.kali.org                                                                                                       
+forums.kali.org                                                                                                           
+gaia.kali.org                                                                                                             
+hecate.kali.org                                                                                                           
+helios.kali.org                                                                                                           
+hera.kali.org                                                                                                             
+http.kali.org                                                                                                             
+image-arm.kali.org                                                                                                        
+image-arm64.kali.org                                                                                                      
+image-nethunter.kali.org                                                                                                  
+image-wsl.kali.org                                                                                                        
+iris.kali.org                                                                                                             
+janitor.kali.org                                                                                                          
+jenkins.kali.org                                                                                                          
+lachesis.kali.org                                                                                                         
+melpomene.kali.org                                                                                                        
+minos.kali.org                                                                                                            
+mirror-traces.kali.org                                                                                                    
+mnemosyne.kali.org                                                                                                        
+nethunter.kali.org                                                                                                        
+nike.kali.org                                                                                                             
+oceanus.kali.org                                                                                                          
+old.kali.org                                                                                                              
+pkg.kali.org                                                                                                              
+poseidon.kali.org                                                                                                         
+repo-staging.kali.org                                                                                                     
+repo.kali.org                                                                                                             
+status.kali.org                                                                                                           
+terpsichore.kali.org                                                                                                      
+tethys.kali.org                                                                                                           
+tools.kali.org                                                                                                            
+triton.kali.org                                                                                                           
+urania.kali.org                                                                                                           
+┌──(kali㉿kali)-[~]
+└─$ nmap -sV -T4 -Pn -iL paste.txt -oN nmap_results.txt
+
+Failed to open input file paste.txt for reading: No such file or directory (2)
+┌──(kali㉿kali)-[~]
+└─$ ls
+
+bandit17  Documents  hlipe..  notes      privat1.kay   qwer         sal_ac  sal_ag  sal_ak  sal_ao          s.txt
+bandit18  Downloads  Music    notes.sh   private.key   rockyou.txt  sal_ad  sal_ah  sal_al  salrockyou.txt  sysinfo.sh
+day3.sh   err        new      notes.txt  privat.kay11  sal_aa       sal_ae  sal_ai  sal_am  sama.kay        Templates
+Desktop   file.txt   new3     Pictures   Public        sal_ab       sal_af  sal_aj  sal_an  setupkali       Videos
+┌──(kali㉿kali)-[~]
+└─$ nano paste.txt
+
+┌──(kali㉿kali)-[~]
+└─$ nmap -sV -T4 -Pn -iL paste.txt -oN nmap_results.txt
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-05-25 15:24 EDT
+Failed to resolve "...".
+Failed to resolve "...".
+Nmap scan report for docs.kali.org (104.18.4.159)
+Host is up (0.035s latency).
+Other addresses for docs.kali.org (not scanned): 104.18.5.159 2606:4700::6812:49f 2606:4700::6812:59f
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+443/tcp  open  ssl/http Cloudflare http proxy
+8080/tcp open  http     Cloudflare http proxy
+8443/tcp open  ssl/http Cloudflare http proxy
+
+Nmap scan report for archive.kali.org (192.99.45.140)
+Host is up (0.044s latency).
+Other addresses for archive.kali.org (not scanned): 2607:5300:60:508c::
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 9.2p1 Debian 2+deb12u6 (protocol 2.0)
+80/tcp  open  http     nginx
+443/tcp open  ssl/http nginx
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Failed to resolve "...".
+Nmap scan report for tools.kali.org (104.18.4.159)
+Host is up (0.033s latency).
+Other addresses for tools.kali.org (not scanned): 104.18.5.159 2606:4700::6812:59f 2606:4700::6812:49f
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+443/tcp  open  ssl/http Cloudflare http proxy
+8080/tcp open  http     Cloudflare http proxy
+8443/tcp open  ssl/http Cloudflare http proxy
+
+Failed to resolve "...".
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 3 IP addresses (3 hosts up) scanned in 110.61 seconds
